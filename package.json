@@ -12,5 +12,10 @@
   },
   "author": "Alex Johnson",
   "license": "GPL-3.0",
-  "homepage": "https://bitbucket.org/notalex/joyent#readme"
+  "homepage": "https://bitbucket.org/notalex/joyent#readme",
+  "dependencies": {
+    "coffeescript": "^2.3.2",
+    "hapi": "^17.6.0",
+    "pug": "^2.0.3"
+  }
 }
