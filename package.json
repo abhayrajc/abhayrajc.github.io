@@ -16,6 +16,7 @@
   "dependencies": {
     "coffeescript": "^2.3.2",
     "hapi": "^17.6.0",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "vision": "^5.4.0"
   }
 }
