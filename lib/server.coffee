@@ -9,6 +9,7 @@ start = ->
     server.views(viewConfig)
     server.route(routes)
     await server.start()
+    console.log('Server started at: ' + server.info.uri)
   catch err
     console.log err
     process.exit 1
