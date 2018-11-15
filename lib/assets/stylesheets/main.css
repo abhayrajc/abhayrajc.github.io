@@ -1,0 +1,11 @@
+#navbar {
+  background-color: rgba(29,28,30, 0.95) !important;
+}
+
+#navbarSupportedContent a {
+    color: white;
+}
+
+#navbarSupportedContent a:hover {
+    color: #71931A;
+}
