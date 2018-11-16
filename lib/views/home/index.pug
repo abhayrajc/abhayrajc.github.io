@@ -8,14 +8,48 @@ block content
       li(data-target="carouselContainer" data-slide-to="2")
     .carousel-inner
       .carousel-item.active
+        img.d-block.w-100(src='/images/crowd.jpg')
+      .carousel-item
         img.d-block.w-100(src='/images/main-banner.jpg')
       .carousel-item
         img.d-block.w-100(src='/images/crowd.jpg')
-      .carousel-item
-        img.d-block.w-100(src='/images/kittens.jpg')
     a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
       span.carousel-control-prev-icon(aria-hidden='true')
       span.sr-only Previous
     a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='prev')
       span.carousel-control-next-icon(aria-hidden='true')
       span.sr-only Next
+
+  #gallery.row
+    .col-md-6.p-5.mt-md-5
+      p.lead Founded in 2006, Joy Entertainment is now an established name as a record label & psychedelic music event organisers that are based out of India. We promote and dedicate to bringing the best of psychedelic music in an aim to entertain fans and followers of this globally recognized culture.
+    .col-md-6.p-5
+      .embed-responsive.embed-responsive-16by9
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/ASsYO_RtFks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+  #contact.row.color-offwhite
+    .col-md-6.p-5
+      h4 GOT TUNES?
+      p.lead We are always looking for some new music. If you have an excellent piece of sound, please dont hesitate from sending it over. Our team of expert sound artists will look at. If you got yourself a copy of fruity loops 2 weeks ago, you are probably not ready to send a demo to us! But if it's organic, trippy or futurustic with incredible sound design, production and programming then we will gladly accept!
+    .col-sm-6.p-5
+      h2 BE THE FIRST TO KNOW ABOUT OUR EXCLUSIVE UPDATES
+      .input-group.mb-5.pr-md-5
+        input.form-control.form-control-lg.bg-white.border.border-white(type='text' placeholder='Email Address')
+        .input-group-append
+          span.input-group-text.bg-warning.spaced-letters
+            strong Get on the List
+
+  #artists.row
+    img.d-block.w-100(src='/images/bottom-banner.jpg')
+
+  #follow.color-offwhite
+    .row
+      h1.mx-auto
+        strong FOLLOW JOY ENTERTAINMENT
+    .row
+      .mx-auto
+        i.mx-2.fa.fa-youtube
+        i.mx-2.fa.fa-facebook
+        i.mx-2.fa.fa-instagram
+        i.mx-2.fa.fa-twitter
+        i.mx-2.fa.fa-spotify

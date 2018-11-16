@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
   head
     title Joy Entertainment
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' type="text/css" rel="stylesheet")
     link(href='/stylesheets/bootstrap-4.0.0.min.css' type="text/css" rel="stylesheet")
     link(href='/stylesheets/main.css' type="text/css" rel="stylesheet")
     script(src='/javascripts/jquery-3.3.1.min.js')
@@ -20,12 +21,12 @@ html(lang="en")
             li.nav-item
               a.nav-link.js-scroll-trigger(href="#artists") Artists
             li.nav-item
-              a.nav-link.js-scroll-trigger(href="#events") Events
-            li.nav-item
               a.nav-link.js-scroll-trigger(href="#gallery") Gallery
             li.nav-item
               a.nav-link.js-scroll-trigger(href="#contact") Contact
+
     main(role='main')
       block content
+
     footer
-      block foot
+      p.ml-5 @copyright 2018 - Joy Entertainment

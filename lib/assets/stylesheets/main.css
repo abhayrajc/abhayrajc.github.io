@@ -1,3 +1,7 @@
+html {
+  scroll-behaviour: smooth;
+}
+
 #navbar {
   background-color: rgba(29,28,30, 0.95) !important;
 }
@@ -8,4 +12,30 @@
 
 #navbarSupportedContent a:hover {
     color: #71931A;
+}
+
+#gallery {
+  background-color: #242424 !important;
+}
+
+#gallery div {
+  color: white;
+}
+
+#follow {
+  padding: 5rem;
+}
+
+#follow i {
+  font-size: 30px
+}
+
+.color-offwhite {
+  background-color: #F1F1F1 !important;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #131313 !important;
+  color: white;
 }
