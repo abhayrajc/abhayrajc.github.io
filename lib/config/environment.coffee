@@ -1,7 +1,7 @@
 Hapi = require('hapi');
 
 server = Hapi.server(
-  host: 'localhost'
+  host: process.env.HOST
   port: process.env.PORT || 8000)
 
 module.exports = server
