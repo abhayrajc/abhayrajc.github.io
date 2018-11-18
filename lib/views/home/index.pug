@@ -1,18 +1,14 @@
 extends ../layout.pug
 
 block content
-  #carouselContainer.carousel.slide(data-ride='carousel' data-pause='false' style='margin-top: 0px')
+  .carousel.slide(data-ride='carousel' data-pause='false' style='margin-top: 0px')
     ol.carousel-indicators
-      li.active(data-target="carouselContainer" data-slide-to="0")
-      li(data-target="carouselContainer" data-slide-to="1")
-      li(data-target="carouselContainer" data-slide-to="2")
+      each index in [0, 1, 2]
+        li(data-target="carouselContainer" data-slide-to=(index + 1) class= index == 0 ? 'active' : '')
     .carousel-inner
-      .carousel-item.active
-        img.d-block.w-100(src='/images/crowd.jpg')
-      .carousel-item
-        img.d-block.w-100(src='/images/main-banner.jpg')
-      .carousel-item
-        img.d-block.w-100(src='/images/crowd.jpg')
+      each index in [1, 2, 3]
+        .carousel-item(class= index == 1 ? 'active' : '')
+          img.d-block.w-100(src='/images/main-banner-' + index + '.jpg')
     a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
       span.carousel-control-prev-icon(aria-hidden='true')
       span.sr-only Previous
@@ -25,7 +21,7 @@ block content
       p.lead Founded in 2006, Joy Entertainment is now an established name as a record label & psychedelic music event organisers that are based out of India. We promote and dedicate to bringing the best of psychedelic music in an aim to entertain fans and followers of this globally recognized culture.
     .col-md-6.p-5
       .embed-responsive.embed-responsive-16by9
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/ASsYO_RtFks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/o2yEOQSKGAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
   #contact.row.color-offwhite
     .col-md-6.p-5
@@ -40,7 +36,11 @@ block content
             strong Get on the List
 
   #artists.row
-    img.d-block.w-100(src='/images/bottom-banner.jpg')
+    .carousel.slide(data-ride='carousel' data-pause='false' style='margin-top: 0px')
+      .carousel-inner
+        each index in [1, 2, 3]
+          .carousel-item(class= index == 1 ? 'active' : '')
+            img.d-block.w-100(src='/images/artist-' + index + '.jpg')
 
   #follow.color-offwhite
     .row
