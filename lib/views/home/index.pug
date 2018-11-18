@@ -1,23 +1,10 @@
 extends ../layout.pug
 
 block content
-  .carousel.slide(data-ride='carousel' data-pause='false' style='margin-top: 0px')
-    ol.carousel-indicators
-      each index in [0, 1, 2]
-        li(data-target="carouselContainer" data-slide-to=(index + 1) class= index == 0 ? 'active' : '')
-    .carousel-inner
-      each index in [1, 2, 3]
-        .carousel-item(class= index == 1 ? 'active' : '')
-          img.d-block.w-100(src='/images/main-banner-' + index + '.jpg')
-    a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
-      span.carousel-control-prev-icon(aria-hidden='true')
-      span.sr-only Previous
-    a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='prev')
-      span.carousel-control-next-icon(aria-hidden='true')
-      span.sr-only Next
+  img.d-block.w-100(src='/images/main-banner.jpg')
 
   #gallery.row
-    .col-md-6.p-5.mt-md-5
+    .col-md-6.centered-text.text-justify
       p.lead Founded in 2006, Joy Entertainment is now an established name as a record label & psychedelic music event organisers that are based out of India. We promote and dedicate to bringing the best of psychedelic music in an aim to entertain fans and followers of this globally recognized culture.
     .col-md-6.p-5
       .embed-responsive.embed-responsive-16by9
@@ -25,22 +12,18 @@ block content
 
   #contact.row.color-offwhite
     .col-md-6.p-5
-      h4 GOT TUNES?
-      p.lead We are always looking for some new music. If you have an excellent piece of sound, please dont hesitate from sending it over. Our team of expert sound artists will look at. If you got yourself a copy of fruity loops 2 weeks ago, you are probably not ready to send a demo to us! But if it's organic, trippy or futurustic with incredible sound design, production and programming then we will gladly accept!
+      h2 GOT TUNES?
+      p.mt-3.lead We are always looking for some new music. If you have an excellent piece of sound, please dont hesitate from sending it over. Our team of expert sound artists will look at. If you got yourself a copy of fruity loops 2 weeks ago, you are probably not ready to send a demo to us! But if it's organic, trippy or futurustic with incredible sound design, production and programming then we will gladly accept!
     .col-sm-6.p-5
       h2 BE THE FIRST TO KNOW ABOUT OUR EXCLUSIVE UPDATES
-      .input-group.mb-5.pr-md-5
+      .input-group.mt-3.mb-5.pr-md-5
         input.form-control.form-control-lg.bg-white.border.border-white(type='text' placeholder='Email Address')
         .input-group-append
           span.input-group-text.bg-warning.spaced-letters
             strong Get on the List
 
-  #artists.row
-    .carousel.slide(data-ride='carousel' data-pause='false' style='margin-top: 0px')
-      .carousel-inner
-        each index in [1, 2, 3]
-          .carousel-item(class= index == 1 ? 'active' : '')
-            img.d-block.w-100(src='/images/artist-' + index + '.jpg')
+
+  img.d-block.w-100(src='/images/bottom-banner.jpg')
 
   #follow.color-offwhite
     .row

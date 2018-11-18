@@ -2,8 +2,28 @@ html {
   scroll-behaviour: smooth;
 }
 
+body {
+  font: 'roboto'
+}
+
 #navbar {
-  background-color: rgba(29,28,30, 0.95) !important;
+  background-color: rgba(29,28,30, 0.3) !important;
+}
+
+.centered-text {
+  padding: 2rem 0.1rem 2rem 5rem
+}
+
+@media(max-width: 415px) {
+  .centered-text {
+    padding: 3.7rem 1rem 0 3rem
+  }
+}
+
+@media(min-width: 1024px) {
+  .centered-text {
+    padding: 6rem 1rem 0 5rem
+  }
 }
 
 #navbarSupportedContent a {
