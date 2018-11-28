@@ -3,17 +3,32 @@ extends ../layout.pug
 block content
   img.d-block.w-100(src='/images/main-banner.jpg')
 
+
+  //- .carousel.slide(data-ride='carousel' data-pause='false' style='margin-top: 0px')
+    ol.carousel-indicators
+      each index in [0, 1, 2]
+        li(data-target="carouselContainer" data-slide-to=(index + 1) class= index == 0 ? 'active' : '')
+    .carousel-inner
+      each index in [1, 2, 3]
+        .carousel-item(class= index == 1 ? 'active' : '')
+          img.d-block.w-100(src='/images/main-banner-' + index + '.jpg')
+    a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='prev')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+
   #gallery.row
-    .col-md-6.centered-text.text-justify
-      p.lead Founded in 2006, Joy Entertainment is now an established name as a record label & psychedelic music event organisers that are based out of India. We promote and dedicate to bringing the best of psychedelic music in an aim to entertain fans and followers of this globally recognized culture.
+    .col-md-6.text-justify.p-5
+      p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     .col-md-6.p-5
       .embed-responsive.embed-responsive-16by9
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/o2yEOQSKGAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/PpejSWY0Wa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
   #contact.row.color-offwhite
-    .col-md-6.p-5
-      h2 GOT TUNES?
-      p.mt-3.lead We are always looking for some new music. If you have an excellent piece of sound, please dont hesitate from sending it over. Our team of expert sound artists will look at. If you got yourself a copy of fruity loops 2 weeks ago, you are probably not ready to send a demo to us! But if it's organic, trippy or futurustic with incredible sound design, production and programming then we will gladly accept!
+    .col-md-6.p-5.text-justify
+      p.mt-3.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     .col-sm-6.p-5
       h2 BE THE FIRST TO KNOW ABOUT OUR EXCLUSIVE UPDATES
       .input-group.mt-3.mb-5.pr-md-5
@@ -28,7 +43,7 @@ block content
   #follow.color-offwhite
     .row
       h1.mx-auto
-        strong FOLLOW JOY ENTERTAINMENT
+        strong FOLLOW Company
     .row
       .mx-auto
         i.mx-2.fa.fa-youtube
