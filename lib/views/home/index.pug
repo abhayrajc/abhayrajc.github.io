@@ -3,51 +3,41 @@ extends ../layout.pug
 block content
   img.d-block.w-100(src='/images/main-banner.jpg')
 
+  #gallery.row.m-5.color-white
+    .row.p-5
+      h2 Welcome to our Village Homestays
+      p.lead Village Homestays helps in connecting remote mountain villages across the globe and ensures their development through responsible and sustainable infrastructure.
+    .row
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-1.jpg')
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-1.jpg')
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-1.jpg')
 
-  //- .carousel.slide(data-ride='carousel' data-pause='false' style='margin-top: 0px')
-    ol.carousel-indicators
-      each index in [0, 1, 2]
-        li(data-target="carouselContainer" data-slide-to=(index + 1) class= index == 0 ? 'active' : '')
-    .carousel-inner
-      each index in [1, 2, 3]
-        .carousel-item(class= index == 1 ? 'active' : '')
-          img.d-block.w-100(src='/images/main-banner-' + index + '.jpg')
-    a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
-      span.carousel-control-prev-icon(aria-hidden='true')
-      span.sr-only Previous
-    a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='prev')
-      span.carousel-control-next-icon(aria-hidden='true')
-      span.sr-only Next
+  #location
+    .embed-responsive.embed-responsive-16by9
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8035251810807!2d71.87132913057299!3d22.361046338888077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39592b51dc9f24e3%3A0xc70bb52dd323dd46!2sThe+Village+Retreat%2C+Vagad!5e0!3m2!1sen!2sin!4v1544875907103" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
 
-  #gallery.row
-    .col-md-6.text-justify.p-5
-      p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  #contact.row.color-white
     .col-md-6.p-5
-      .embed-responsive.embed-responsive-16by9
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/PpejSWY0Wa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-
-  #contact.row.color-offwhite
-    .col-md-6.p-5.text-justify
-      p.mt-3.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      h3 Experiences
+      p.mt-3.lead Experience with us the unexplored side of Vagadh! We promise some unique and inspirational journeys to our homestays in the villages. By travelling with us, join our vision to ensure a sustainable and holistic development of these remote communities through tourism. Homestays based tourism ensures better livelihood for these communities and empowerment of village women.
     .col-sm-6.p-5
-      h2 BE THE FIRST TO KNOW ABOUT OUR EXCLUSIVE UPDATES
-      .input-group.mt-3.mb-5.pr-md-5
-        input.form-control.form-control-lg.bg-white.border.border-white(type='text' placeholder='Email Address')
-        .input-group-append
-          span.input-group-text.bg-warning.spaced-letters
-            strong Get on the List
-
-
-  img.d-block.w-100(src='/images/bottom-banner.jpg')
-
-  #follow.color-offwhite
-    .row
-      h1.mx-auto
-        strong FOLLOW Company
-    .row
+      address
+        .lead Mannarsinh M. Chudasama
+        br
+        = 'Darbargadh, Vagad'
+        br
+        =  'Taluka Dhandhuka, '
+        br
+        = 'Ahmedabad: 382245'
+        br
+        i.fa.fa-phone 99999999
       .mx-auto
-        i.mx-2.fa.fa-youtube
-        i.mx-2.fa.fa-facebook
-        i.mx-2.fa.fa-instagram
-        i.mx-2.fa.fa-twitter
-        i.mx-2.fa.fa-spotify
+        a(href='https://facebook.com/abhay')
+          i.mx-2.fa.fa-facebook
+        a(href='https://instagram.com/abhay')
+          i.mx-2.fa.fa-instagram
+        a(href='https://twitter.com/abhay')
+          i.mx-2.fa.fa-twitter

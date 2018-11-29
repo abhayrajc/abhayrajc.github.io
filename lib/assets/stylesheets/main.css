@@ -34,12 +34,8 @@ body {
     color: #71931A;
 }
 
-#gallery {
-  background-color: #242424 !important;
-}
-
 #gallery div {
-  color: white;
+  color: #242424;
 }
 
 #follow {
