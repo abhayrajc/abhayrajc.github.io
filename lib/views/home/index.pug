@@ -1,31 +1,42 @@
 extends ../layout.pug
 
+//- 1600 x 500 banner
+//- 470 x 314 small preview
+//- 470 x 313 bottom small preview
+//- 1370 x 600 bottom banner
+
 block content
   img.d-block.w-100(src='/images/main-banner.jpg')
 
-  #gallery.row.m-5.color-white
+  #preview.row.m-5.color-white
     .row.p-5
-      h2 Welcome to our Village Homestays
-      p.lead Village Homestays helps in connecting remote mountain villages across the globe and ensures their development through responsible and sustainable infrastructure.
+      h2 Welcome to The Village Retreat, Vagad
+      p.lead The Village Retreat, Vagad is a village based homestay program hosted by Mr Manharsinh M. Chudasama, which allows you to weave oneself into the life of the village, farm and the environment around them.
+      p.lead It is approved by Gujarat Tourism as one of the pioneers of Agritourism programmes.
     .row
       .col-md-4
         img.d-block.w-100(src='/images/gallery-1.jpg')
+        p.lead Air conditioned rooms with running water and antique furniture.
       .col-md-4
-        img.d-block.w-100(src='/images/gallery-1.jpg')
+        img.d-block.w-100(src='/images/gallery-2.jpg')
+        p.lead Have a chat on Gir cows, their history, breeding, national and world scenario.
       .col-md-4
-        img.d-block.w-100(src='/images/gallery-1.jpg')
+        img.d-block.w-100(src='/images/gallery-3.jpg')
+        p.lead Teach at IndiraDevi Pre-School
 
   #location
     .embed-responsive.embed-responsive-16by9
-      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8035251810807!2d71.87132913057299!3d22.361046338888077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39592b51dc9f24e3%3A0xc70bb52dd323dd46!2sThe+Village+Retreat%2C+Vagad!5e0!3m2!1sen!2sin!4v1544875907103" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8035251810807!2d71.87132913057299!3d22.361046338888077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39592b51dc9f24e3%3A0xc70bb52dd323dd46!2sThe+Village+Retreat%2C+Vagad!5e0!3m2!1sen!2sin!4v1544875907103" width="600" height="300" frameborder="0" style="border:0" allowfullscreen)
 
   #contact.row.color-white
     .col-md-6.p-5
-      h3 Experiences
-      p.mt-3.lead Experience with us the unexplored side of Vagadh! We promise some unique and inspirational journeys to our homestays in the villages. By travelling with us, join our vision to ensure a sustainable and holistic development of these remote communities through tourism. Homestays based tourism ensures better livelihood for these communities and empowerment of village women.
+      p.mt-3.lead Experience with us the unexplored side of Bhal and Vagad!
+      p.lead We promise some unique and inspirational journeys at our homestays in Vagad.
+      p.lead By living with us, join our vision to ensure a sustainable and holistic development of these remote communities through tourism.
+      p.lead Homestays based tourism ensures better livelihood for these communities and empowerment of village women.
     .col-sm-6.p-5
       address
-        .lead Mannarsinh M. Chudasama
+        .lead Manharsinhji M. Chudasama
         br
         = 'Darbargadh, Vagad'
         br
@@ -33,11 +44,54 @@ block content
         br
         = 'Ahmedabad: 382245'
         br
-        i.fa.fa-phone 99999999
+        i.fa.fa-phone +91-9727744456, 9879544888
+        br
+        i.fa.fa-envelope  vagadretreat@gmail.com
       .mx-auto
-        a(href='https://facebook.com/abhay')
-          i.mx-2.fa.fa-facebook
-        a(href='https://instagram.com/abhay')
-          i.mx-2.fa.fa-instagram
-        a(href='https://twitter.com/abhay')
-          i.mx-2.fa.fa-twitter
+        a(href='https://www.facebook.com/The-Village-Retreat-Vagad-341492930001819/')
+          = 'Facebook Page'
+
+  #gallery.row.m-5.color-white
+    .row.pl-3.pb-2
+      h2 Experiences
+    hr
+    .row
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-1.png')
+        p.lead Cycle down to the cottage located, right in the middle of cotton field's. Relax and walk down to the check dam, while we cook u a meal on the wood fire chula.
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-2.png')
+        p.lead Watch international sports, Satellite TV is available.
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-3.png')
+        p.lead Feed the desi hens.
+    .row
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-4.png')
+        p.lead Visit Velavadar Black Buck Park in the morning, mingle with the highest density of any antelopes in Asia. Carry sandwiches and take your time.
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-5.png')
+        p.lead Supervise farm work, take a hike, we will provide a meal cooked in the middle of nowhere. Take in the sights, immerse yourself into the environment.
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-6.png')
+        p.lead Play with rabbits, run in circles with them.
+    .row
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-7.png')
+        p.lead Do some gardening, prepare some manure or just manage the plants or do some watering.
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-8.png')
+        p.lead Spend ur day cycling by canals and trails, some nice off road circuits also available.
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-9.png')
+        p.lead Play badminton
+    .row
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-10.png')
+        p.lead Go cow grazing with the Nana bhai Bharwads of Vagad.
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-11.png')
+        p.lead All meals after breakfast, are cooked on a woodfire chula.
+      .col-md-4
+        img.d-block.w-100(src='/images/gallery-12.png')
+        p.lead Outdoor dining, encourages everyone to interact and share memories and anecdotes.
